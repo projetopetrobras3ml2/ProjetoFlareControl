@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/frontend/assets/css/styles.css" />
+</head>
+<body>
+  
+  <main class="frame" aria-label="Área principal">
+    <section class="card" role="form" aria-labelledby="titulo-login">
+      <!-- Coluna esquerda -->
+      <div>
+        <div class="brand" aria-label="Identidade visual">
+          <img class="flag" src="/frontend/assets/img/Petrobras_horizontal_logo.svg.png" alt="Logo Petrobras">
+        </div>
+        <h1 id="titulo-login" class="title">Fazer Login</h1>
+      </div>
+
+      <!-- Coluna direita -->
+      <form class="form" id="loginForm">
+        <label class="field">
+          <span class="label">E-mail ou chave de acesso</span>
+          <input class="input" type="email" name="email" placeholder="seu.email@exemplo.com" autocomplete="username" required />
+        </label>
+
+        <p class="fineprint">
+          A utilização dos recursos da Petrobras é de responsabilidade do usuário. Para tanto,
+          o Código de Conduta Ética da Petrobrás deve ser respeitado. A não observância de
+          tais regras está sujeita a sanções administrativas e na esfera civil.
+        </p>
+
+        <div class="actions">
+          <button class="btn" type="submit">Avançar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="/frontend/assets/js/app.js"></script>
+</body>
+</html>
